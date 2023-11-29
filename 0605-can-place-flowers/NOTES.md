@@ -1,0 +1,1 @@
+Instead of finding the maximum value of countcount that can be obtained, as done in the last approach, we can stop the process of checking the positions for planting the flowers as soon as countcount becomes equal to nn. Doing this leads to an optimization of the first approach. If countcount never becomes equal to nn, nn flowers can't be planted at the empty positions

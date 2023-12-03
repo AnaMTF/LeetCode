@@ -1,0 +1,6 @@
+What we would do is, we would find the product of all the numbers of our Array and then divide the product with each element of the array to get the new element for that position in our final answer array.
+​
+Now after presenting the interviewer with this solution, here is our one more chance to shine out in the interview. We would specifically tell the interviewer that one major con in going with this method is when we have an element as 0 in our array. The problem is that, we can't perform a division by 0, as a result, we won't be able to get corresponding values in our final answer array for the indices having 0 in our initial array at that position.
+​
+Similar to finding Prefix Sum Array, here we would intend to find the Prefix Product Array and Suffix Product Array for our original array, i.e. pre[i] = pre[i - 1] * a[i - 1] (yes, we multiply with a[i - 1] and not with a[i] on purpose) and similarly suff[i] = suff[i + 1] * a[i + 1].
+Now, at any index i our final answer ans[i] would be given by ans[i] = pre[i] * suff[i]. Why? Because the pre[i] * suff[i] contains product of every element before i and every element after i but not the element at index i (and that is the reson why we excluded a[i] in our prefix and suffix product).

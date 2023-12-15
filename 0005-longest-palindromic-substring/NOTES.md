@@ -1,0 +1,1 @@
+Solved using string(Three Nested Loop). Brute Force Approach.

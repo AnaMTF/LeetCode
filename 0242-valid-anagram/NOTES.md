@@ -1,0 +1,1 @@
+Basically we have a integer array of mapping each character to it's index in the alphabet if it's in s we add 1 to the count if t we minus 1. At the end if all values in the array are still zero we know we had an equal amount of each character in the two strings and therefore an anagram.
